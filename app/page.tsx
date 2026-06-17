@@ -238,7 +238,7 @@ export default function HomePage() {
 
               <DropZone
                 onFileSelect={handleFileSelect}
-                isAnalyzing={appState === "analyzing"}
+                isAnalyzing={false}
               />
 
               {/* Sample Resume Button */}

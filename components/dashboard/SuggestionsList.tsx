@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import {
-  Linkedin, Github, Mail, Phone, FileText, Briefcase, Code,
+  Link2, GitBranch, Mail, Phone, FileText, Briefcase, Code,
   Award, Trophy, Zap, AlignLeft, BarChart2, GraduationCap, Pen,
 } from "lucide-react";
 import type { Suggestion } from "@/types";
 
 const ICON_MAP: Record<string, React.ElementType> = {
-  Linkedin, Github, Mail, Phone, FileText, Briefcase, Code,
+  Linkedin: Link2, Github: GitBranch, Mail, Phone, FileText, Briefcase, Code,
   Award, Trophy, Zap, AlignLeft, BarChart2, GraduationCap, Pen,
 };
 

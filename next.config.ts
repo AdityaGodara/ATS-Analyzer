@@ -1,18 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Required for pdfjs-dist to work with webpack
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      // pdfjs-dist worker needs to be loaded from CDN, not bundled
-      config.resolve.alias = {
-        ...config.resolve.alias,
-      };
-    }
-    return config;
-  },
+  // Next.js 16 uses Turbopack by default — declare it explicitly to avoid
+  // the "webpack vs turbopack" warning and prevent build failures.
+  turbopack: {},
 
-  // Allow pdfjs-dist worker from CDN
+  // Required for pdfjs-dist: enables SharedArrayBuffer in the browser
   async headers() {
     return [
       {

@@ -1,6 +1,6 @@
 "use client";
 
-import { Zap, ExternalLink, Github, Linkedin } from "lucide-react";
+import { Zap, ExternalLink, GitBranch, Link2 } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -60,7 +60,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-800 text-slate-500 hover:border-slate-600 hover:text-slate-300 transition-all"
                 >
-                  <Github className="h-4 w-4" />
+                  <GitBranch className="h-4 w-4" />
                 </a>
                 <a
                   href="https://linkedin.com/in/adityagodara"
@@ -68,7 +68,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-800 text-slate-500 hover:border-slate-600 hover:text-slate-300 transition-all"
                 >
-                  <Linkedin className="h-4 w-4" />
+                  <Link2 className="h-4 w-4" />
                 </a>
               </div>
             </div>

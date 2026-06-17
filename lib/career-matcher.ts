@@ -209,7 +209,6 @@ function formatRoleSkillName(skill: string): string {
     "swift": "Swift",
     "django": "Django",
     "fastapi": "FastAPI",
-    "flutter": "Flutter",
     "react native": "React Native",
     "android": "Android",
     "ios": "iOS",

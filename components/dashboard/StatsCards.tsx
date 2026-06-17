@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import {
   FileText, Hash, Zap, LayoutList, Clock,
-  Mail, Phone, Linkedin, Github, GraduationCap,
+  Mail, Phone, Link2, GitBranch, GraduationCap,
   Briefcase, Code, Award, Trophy, AlignLeft,
 } from "lucide-react";
 import type { ResumeStats, ContactInfo, SectionInfo } from "@/types";
@@ -56,8 +56,8 @@ export default function StatsCards({ stats, contact, sections }: StatsCardsProps
   const contactChecks = [
     { icon: Mail, label: "Email", has: contact.hasEmail },
     { icon: Phone, label: "Phone", has: contact.hasPhone },
-    { icon: Linkedin, label: "LinkedIn", has: contact.hasLinkedIn },
-    { icon: Github, label: "GitHub", has: contact.hasGitHub },
+    { icon: Link2, label: "LinkedIn", has: contact.hasLinkedIn },
+    { icon: GitBranch, label: "GitHub", has: contact.hasGitHub },
   ];
 
   const sectionChecks = [

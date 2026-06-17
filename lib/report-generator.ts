@@ -286,7 +286,7 @@ export function generateATSReport(analysis: ResumeAnalysis): void {
   y += 52;
 
   // ── Footer ───────────────────────────────────────────────────────────────────
-  const totalPages = (doc.internal as { getNumberOfPages: () => number }).getNumberOfPages();
+  const totalPages = doc.getNumberOfPages();
   for (let i = 1; i <= totalPages; i++) {
     doc.setPage(i);
     doc.setFontSize(8);
